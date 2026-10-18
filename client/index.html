@@ -1,0 +1,21 @@
+<!-- Tells the browser this is a modern HTML5 page -->
+<!doctype html>
+<html lang="en"> <!-- page language: English (helps screen readers and translation) -->
+  <head>
+    <meta charset="UTF-8" /> <!-- character set, so symbols and other languages display correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- makes the page fit phone screens (responsive) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> <!-- browser tab icon, from client/public/favicon.svg -->
+    <!-- Warm up the connection to Google Fonts so the fonts load faster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Loads two fonts: Bricolage Grotesque (headings, weights 600/700) and Source Sans 3 (body text, weights 400/600) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+    <title>AirVoice - My Bills</title> <!-- text shown on the browser tab -->
+  </head>
+  <body>
+    <!-- Empty box: React builds the whole app inside this div -->
+    <div id="root"></div>
+    <!-- Starts the React app by loading main.jsx (type="module" allows import statements) -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
